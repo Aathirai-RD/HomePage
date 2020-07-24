@@ -1,1 +1,1 @@
-# HomePage
+This project is a simple webpage which is useful and motivational for those who begin their day with laptops,mobilephone,PC,etc.This project contains motivational quotes that are displayed in a random manner.Beginning of the day will be reflected to the whole day.So this project will help them to keep them self motivated.
