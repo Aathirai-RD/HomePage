@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy day :)</title>
+    <link href='https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,700;1,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 50px;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+            background-image: url(https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1189&q=80);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        h1 {
+            font-size: 28px;
+            max-width: 95%;
+            margin: auto;
+            line-height: 1.6;
+            color: white;
+        }
+        
+        h3 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="quotes"></h1>
+        <h3 id="author"></h3>
+
+
+    </div>
+    <script>
+        var quote = [{
+            'q': 'Imagination is more important than knowledge.',
+            'a': 'Albert, Einstein - German theoretical physicist '
+        }, {
+            'q': 'All our dreams can come true, if we have the courage to pursue them',
+            'a': 'Walt Disney - American filmmaker '
+        }, {
+            'q': 'Optimism, pessimism, fuck that; we’re going to make it happen. As God is my bloody witness, I’m hell-bent on making it work.',
+            'a': 'Elon Musk - co-founder Paypal, Space-X and Tesla'
+        }, {
+            'q': 'Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.',
+            'a': 'Steve Jobs - Apple'
+        }, {
+            'q': 'Difficulties in your life do not come to destroy you but to help you realise your hidden potential and power. Let difficulties know that you too are difficult.',
+            'a': 'Avul Pacir Zainulabidin Abdul Kalam - Atomic Scientist and President of India'
+        }, {
+            'q': 'It’s very easy to be different, but very difficult to be better.',
+            'a': 'Jonathan Ive - Apple'
+        }, {
+            'q': 'Once we accept our limits, we go beyond them.',
+            'a': 'Albert Einstein'
+        }, {
+            'q': 'We are what we repeatedly do. Excellence, then, is not an act, but a habit.',
+            'a': 'Aristotle - Greek philosopher'
+        }, {
+            'q': 'Never bend your head. Always hold it high. Look the world straight in the eye.',
+            'a': 'Helen Keller - Blind and Deaf American Writer, Activist and Lecturer'
+        }, {
+            'q': 'I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.',
+            'a': 'Nelson Mandela - Politics and President of South Africa'
+        }, {
+            'q': 'Reality is created by the mind, we can change our reality by changing our mind. ',
+            'a': 'Plato - Greek philosopher, pedagogue and mathematician'
+        }, {
+            'q': 'It is our choices that show what we truly are, far more than our abilities.',
+            'a': 'J.K. Rowling - British writer'
+        }, {
+            'q': 'I’m a success today because I had a friend who believed in me and I didn’t have the heart to let him down.',
+            'a': 'Abraham Lincoln-American President'
+        }, {
+            'q': 'Let us always meet each other with smile, for the smile is the beginning of love',
+            'a': 'Mother Teresa-Founder of Order of the Missionaries of Charity'
+        }, {
+            'q': 'Do what you love and the rest will come.',
+            'a': 'Dennis Crowley - Foursquare'
+        }]
+
+        var len = quote.length;
+        var random = Math.floor(Math.random() * len);
+
+        document.getElementById('quotes').innerHTML = quote[random].q
+        document.getElementById('author').innerHTML = quote[random].a
+    </script>
+</body>
+
+</html>
